@@ -14,7 +14,7 @@ public class _18 {
     public static void main(String[] args) {
         int[] nums = new int[]{2, 2, 2, 2, 2};
         int target = 8;
-        fourSum2(nums, target);
+        fourSum(nums, target);
     }
 
     public static List<List<Integer>> fourSum(int[] nums, int target) {
