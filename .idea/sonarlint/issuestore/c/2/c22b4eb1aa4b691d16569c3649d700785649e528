@@ -1,8 +1,0 @@
-
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(à„˜òýÿÿÿÿ
-O
-java:S1854"9Remove this useless assignment to local variable "lists".(¥©Ö¦
-@
-java:S1481"*Remove this unused "lists" local variable.(¥©Ö¦
-h
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ž÷¸¶

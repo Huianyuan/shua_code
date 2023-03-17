@@ -1,15 +1,0 @@
-
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ã†–ô
-P
-java:S1191"5Use classes from the Java API instead of Sun classes.(„¯Ò¬þÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(°¯ÿÁüÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
-:
-java:S1659"Declare "j" on a separate line.(¦¢Éëùÿÿÿÿ
-S	java:S106""9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
-Z	java:S106'"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8‘ŠÂþì0
-Z	java:S106,"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8­âÃþì0
-O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8”»Âþì0
-U
-java:S1128"3Remove this unused import 'sun.misc.Version.print'.(„¯Ò¬þÿÿÿÿ8”»Âþì0
