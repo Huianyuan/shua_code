@@ -1,0 +1,12 @@
+
+s	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‡ğ€
+]
+java:S1854";Remove this useless assignment to local variable "matrix2".(ˆ¹ÛŞùÿÿÿÿ8Ã¯à€í0
+N
+java:S1481",Remove this unused "matrix2" local variable.(ˆ¹ÛŞùÿÿÿÿ8Ä¯à€í0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ˆ‚®ª
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ıŒŒŞşÿÿÿÿ
+V
+java:S1659"@Declare "top" and all following declarations on a separate line.(¶ùĞ®
