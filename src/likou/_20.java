@@ -1,13 +1,11 @@
 package likou;
 
 import java.util.Deque;
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * @author :lhy
- * @description :TODO
+ * @description :逆波兰表达式求值
  * @date :2023/03/23 上午 10:30
  */
 public class _20 {

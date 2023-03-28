@@ -5,13 +5,13 @@ import java.util.LinkedList;
 
 /**
  * @author :lhy
- * @description :TODO
+ * @description :滑动窗口最大值
  * @date :2023/03/28 上午 09:46
  */
 public class _239 {
     public static void main(String[] args) {
-        int[] nums={1,3,-1,-3,5,3,6,7};
-        int k=2;
+        int[] nums={1,3,1,2,0,5};
+        int k=3;
         int[] ints = maxSlidingWindow(nums, k);
 
     }
