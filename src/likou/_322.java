@@ -1,5 +1,7 @@
 package likou;
 
+import java.util.Arrays;
+
 /**
  * @author :lhy
  * @description :322.凑零钱-记忆化搜索
@@ -8,9 +10,10 @@ package likou;
 public class _322 {
 
     public static void main(String[] args) {
-        int[] coins={5,6,7};
-        int amount=6;
+        int[] coins={1,2,5};
+        int amount=11;
         int result = coinChange(coins, amount);
+        int result2 = coinChange2(coins, amount);
         System.out.println(result);
     }
 
@@ -37,5 +40,21 @@ public class _322 {
 
         count[amount-1] =(min==Integer.MAX_VALUE)?-1:min;
         return count[amount-1];
+    }
+    //动态规划
+    public static int coinChange2(int[] coins, int amount) {
+        int max = Integer.MAX_VALUE;
+        int[] dp = new int[amount + 1];
+        Arrays.fill(dp, max);
+        dp[0]=0;
+        for(int i=0;i<coins.length;i++){
+            for(int j=coins[i];j<=amount;j++){
+                //只有dp[j-coins[i]]不是初始最大值时，该位置才有选择的必要
+                if(dp[j-coins[i]]!=max){
+                    dp[j]=Math.min(dp[j],dp[j-coins[i]]+1);
+                }
+            }
+        }
+        return dp[amount]==max? -1 :dp[amount];
     }
 }
