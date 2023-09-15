@@ -1,6 +1,8 @@
 package mianshi;
 
+import java.util.Map;
 import java.util.Scanner;
+import java.util.SortedMap;
 import java.util.TreeMap;
 
 /**
@@ -36,5 +38,40 @@ public class XIAOMI20230902B {
         // 2． 若 T(j)<T(i)+C(i) ：此时S(j)=T(i)+C(i)+C(j)<T(j)+C(j)+C(i)=S(i)
         //
         // 所以 S(j) <S(j), 优先执行 j 是最佳选择。
+
+
+        // 初始化一个Scanner对象用于读取输入字符串
+        Scanner scanner = new Scanner(System.in);
+        // 初始化一个TreeMap用于存储任务
+        TreeMap<Integer, Integer> tasks = new TreeMap<>();
+        // 读取输入字符串并创建任务
+        System.out.println("请输入任务描述：");
+        String input = scanner.nextLine();
+        String[] taskArray = input.split(",");
+        for (String task : taskArray) {
+            String[] taskParts = task.split(":");
+            int batteryPower = Integer.parseInt(taskParts[0]);
+            int minimumInitialBatteryPower = Integer.parseInt(taskParts[1]);
+            tasks.put(batteryPower, minimumInitialBatteryPower);
+        }
+        // 对任务按照电池电量从小到大排序
+        SortedMap<Integer, Integer> sortedTasks = new TreeMap<>(tasks);
+        // 初始化最小初始电池电量为0
+        int minInitialBatteryPower = 0;
+        // 遍历排序后的任务
+        for (Map.Entry<Integer, Integer> task : sortedTasks.entrySet()) {
+            // 计算当前任务的电池电量需求
+            int taskBatteryPower = task.getKey();
+            // 计算当前任务的最低初始电池电量
+            int taskMinInitialBatteryPower = task.getValue();
+            // 如果当前任务的电池电量需求大于等于剩余最低初始电池电量，跳过该任务
+            if (taskBatteryPower >= minInitialBatteryPower) {
+                continue;
+            }
+            // 更新最低初始电池电量
+            minInitialBatteryPower = taskMinInitialBatteryPower;
+        }
+        // 输出最低初始电池电量
+        System.out.println("最低初始电池电量为：" + minInitialBatteryPower);
     }
 }
